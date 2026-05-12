@@ -26,5 +26,4 @@ public class CommissionService {
 
         return commissionClient.getCommission(request);
     }
-
 }
