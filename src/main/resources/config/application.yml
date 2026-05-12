@@ -1,0 +1,45 @@
+spring:
+  cloud:
+    consul:
+      config:
+        enabled: false
+  datasource:
+    url: jdbc:oracle:thin:@dev.cbapp-scan.kapitalbank.az:1521/ldb
+    username: BB_TERMINAL_ORDER
+    password: BB_TERMINAL_ORDER
+    driver-class-name: oracle.jdbc.OracleDriver
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak:
+            provider: keycloak
+            client-id: ecomm-merchant-workplace
+            client-secret: QRieP83RjzH1uTnXOixQAIlAEXNRz7DB
+            scope:
+              - openid
+            authorization-grant-type: client_credentials
+            token-prefix: 'Bearer '
+        provider:
+          keycloak:
+            token-uri: https://pre.atlas-keycloak.kapitalbank.az/auth/realms/Atlas/protocol/openid-connect/token
+
+  keycloak:
+    realm: Atlas
+    auth-server-url: https://pre.atlas-keycloak.kapitalbank.az/auth
+    resource: ecomm-merchant-workplace
+application:
+  name: ms-demo
+  client:
+    account:
+      type: 27
+      currency: 944
+      status: ACTIVE
+      customerType: INDIVIDUAL
+      url: https://pre.atlas.kapitalbank.az
+    tariff:
+      url: https://pre.tariff.bb.kapitalbank.az
+      channelId: "2"
+      currency: "ALL"
+    taxes:
+      url: https://pre.adp-taxes.bb.kapitalbank.az
