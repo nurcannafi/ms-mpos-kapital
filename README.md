@@ -85,15 +85,3 @@ Service Layer
           ▼
 External Banking Services
 
-## 📚 What I Learned
-
-During this project I gained practical experience with:
-
-- Designing REST APIs using Spring Boot
-- Integrating external services with OpenFeign
-- OAuth2-based service-to-service authentication
-- Configuration-driven client development
-- Object mapping using MapStruct
-- Working with enterprise application architecture
-- Writing clean, maintainable Java code
-- Collaborating in a professional software development environment
