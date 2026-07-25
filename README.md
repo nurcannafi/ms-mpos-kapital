@@ -7,7 +7,6 @@ The project demonstrates enterprise backend development practices, external serv
 > **Note**
 > This repository is shared for educational and portfolio purposes only. Confidential business logic, credentials, and sensitive information have been removed.
 
----
 
 ## Features
 
@@ -21,8 +20,6 @@ The project demonstrates enterprise backend development practices, external serv
 - Swagger/OpenAPI documentation
 - Configuration-based client management
 - MapStruct object mapping
-
----
 
 ## Tech Stack
 
@@ -38,8 +35,6 @@ The project demonstrates enterprise backend development practices, external serv
 | Build Tool | Gradle |
 | Utilities | Lombok |
 
----
-
 ## External Integrations
 
 The service communicates with several external systems using OpenFeign clients.
@@ -53,9 +48,7 @@ Current integrations include:
 
 Each client has its own configuration and is managed independently.
 
----
-
-## 🚀 Getting Started
+## Getting Started
 
 Clone the repository
 
@@ -75,17 +68,12 @@ Run the application
 
 After starting the application:
 
-```
 http://localhost:8080/swagger-ui/index.html
-```
-
----
 
 ## Architecture
 
 The project follows a layered architecture.
 
-```
 Client Layer (OpenFeign)
           │
           ▼
@@ -96,9 +84,6 @@ Service Layer
           │
           ▼
 External Banking Services
-```
-
----
 
 ## 📚 What I Learned
 
@@ -112,5 +97,3 @@ During this project I gained practical experience with:
 - Working with enterprise application architecture
 - Writing clean, maintainable Java code
 - Collaborating in a professional software development environment
-
----
